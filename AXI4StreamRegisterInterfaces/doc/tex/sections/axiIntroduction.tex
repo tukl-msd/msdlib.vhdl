@@ -1,0 +1,64 @@
+\section{AXI4-Stream short introduction}
+
+AXI4-Stream is an extension of the ARM-AMBA bus communication protocol intended to be used on streaming applications without dealing with complex control signals. Latest versions of Xilinx EDK (13 or higher) has built-in support for AXI4-Stream. Nevertheless, the documentation is very limited. That is why this short introduction could be a good starting point.
+
+Basically, AXI4-Stream consists on a Master/Slave interface that can be employed for Writing/Reading respectively. The maximum number of Master/Slave interfaces on a Microblaze-based system is $16$ in total. Furthermore, AXI4-Stream is a $32$-bit bus communication protocol. Tables~\ref{t0a}, \ref{t0b}, \ref{t1a}, and~\ref{t1b} contain a brief description about the AXI4-Stream signals.
+
+
+\begin{table}
+    \begin{tabular}{ | c | c | c | c |}
+    \hline
+Signal & Direction & Width(bits) & Type \\ \hline
+{\tt s\_axis\_tdata} & input & 32 &  data \\ \hline
+{\tt s\_axis\_tvalid} & input & 1 & control  \\ \hline
+{\tt s\_axis\_tlast} & input & 1 & control \\  \hline
+{\tt s\_axis\_tready} & output & 1 & control \\ 
+    \hline
+    \end{tabular}
+	\caption{AXI-Slave signals (details)}
+    \label{t0a}
+\end{table}
+
+\begin{table}
+    \begin{tabular}{ | c | c |}
+    \hline
+Signal & Description \\ \hline
+{\tt s\_axis\_tdata} &  payload data \\ \hline
+{\tt s\_axis\_tvalid} & receiving valid data, if s\_axis\_tvalid = '1'  \\ \hline
+{\tt s\_axis\_tlast} & receiving last transaction value, if s\_axis\_tlast = '1' \\  \hline
+{\tt s\_axis\_tready} & unit is ready to receive data, if s\_axis\_tready = '1' \\ 
+    \hline
+    \end{tabular}
+	\caption{AXI-Slave signals (description)}
+    \label{t0b}
+\end{table}
+
+\begin{table}
+    \begin{tabular}{ | c | c | c | c |}
+    \hline
+Signal & Direction & Width(bits) & Type \\ \hline
+{\tt m\_axis\_tdata} & output & 32 &  data \\ \hline
+{\tt m\_axis\_tvalid} & output & 1 & control  \\ \hline
+{\tt m\_axis\_tlast} & output & 1 & control \\  \hline
+{\tt m\_axis\_tready} & input & 1 & control \\ 
+    \hline
+    \end{tabular}
+	\caption{AXI-Master signals (details)}
+    \label{t1a}
+\end{table}
+
+\begin{table}
+    \begin{tabular}{ | c | c |}
+    \hline
+Signal & Description \\ \hline
+{\tt m\_axis\_tdata} &  payload data \\ \hline
+{\tt m\_axis\_tvalid} & sending valid data, if s\_axis\_tvalid = '1'  \\ \hline
+{\tt m\_axis\_tlast} & sending last transaction value, if s\_axis\_tlast = '1' \\  \hline
+{\tt m\_axis\_tready} & unit is ready to send data, if s\_axis\_tready = '1' \\ 
+    \hline
+    \end{tabular}
+	\caption{AXI-Master signals (description)}
+    \label{t1b}
+\end{table}
+
+

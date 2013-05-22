@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg3095"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="upsizer.svg"
+   inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/work/doc/AxiParallelSerial/report/images/upsizer.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3097">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3948"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3951"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="521.93176"
+     inkscape:cy="337.9039"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     inkscape:window-x="77"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata3100">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="140.33035"
+       y="559.50507"
+       id="text3122"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="140.33035"
+         y="559.50507"
+         style="text-align:start;text-anchor:start"
+         id="tspan3136">clk</tspan><tspan
+         sodipodi:role="line"
+         x="140.33035"
+         y="609.50507"
+         style="text-align:start;text-anchor:start"
+         id="tspan3140">rst</tspan><tspan
+         sodipodi:role="line"
+         x="140.33035"
+         y="659.50507"
+         style="text-align:start;text-anchor:start"
+         id="tspan3142">s_axis_tdata</tspan><tspan
+         sodipodi:role="line"
+         x="140.33035"
+         y="709.50507"
+         id="tspan3130"
+         style="text-align:start;text-anchor:start">s_axis_tlast</tspan><tspan
+         sodipodi:role="line"
+         x="140.33035"
+         y="759.50507"
+         id="tspan3132"
+         style="text-align:start;text-anchor:start">s_axis_tvalid</tspan><tspan
+         sodipodi:role="line"
+         x="140.33035"
+         y="809.50507"
+         id="tspan3134"
+         style="text-align:start;text-anchor:start">s_axis_tready</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:5.15287209;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3180"
+       width="805.26581"
+       height="527.65338"
+       x="135.0153"
+       y="408.52039"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="668.89948"
+       y="503.79074"
+       id="text3182"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         id="tspan3186"
+         sodipodi:role="line"
+         x="668.89948"
+         y="503.79074"
+         style="font-size:60px;text-align:end;text-anchor:end">[Upsizer]</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 78.571426,547.50504 52.126184,0"
+       id="path4773"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4775"
+       d="m 78.571426,597.50504 52.126184,0"
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 78.571426,649.50504 52.126184,0"
+       id="path4777"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4804"
+       d="m 78.571426,699.50504 52.126184,0"
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 78.571426,751.50504 52.126184,0"
+       id="path4806"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4808"
+       d="m 80.857146,798.07647 52.766994,0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:connector-curvature="0"
+       id="path3091"
+       d="m 944.28574,649.50504 52.1262,0"
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 944.28574,699.50504 52.1262,0"
+       id="path3093"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       inkscape:connector-curvature="0"
+       id="path3095"
+       d="m 944.28574,751.50504 52.1262,0"
+       style="fill:none;stroke:#000000;stroke-width:2.06058836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       d="m 946.57144,798.07647 52.767,0"
+       id="path3097"
+       inkscape:connector-curvature="0" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/Users/luisvega/Documents/tukl/HiWi/doc/AxiStream/images/axislvarch.png"
+       sodipodi:linespacing="125%"
+       id="text3101"
+       y="609.79077"
+       x="934.375"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         id="tspan3105"
+         style="text-align:start;text-anchor:start"
+         y="609.79077"
+         x="934.375"
+         sodipodi:role="line" /><tspan
+         id="tspan3107"
+         style="text-align:end;text-anchor:end"
+         y="659.79077"
+         x="934.375"
+         sodipodi:role="line">m_axis_tarray</tspan><tspan
+         style="text-align:end;text-anchor:end"
+         id="tspan3109"
+         y="709.79077"
+         x="934.375"
+         sodipodi:role="line">m_axis_tlast</tspan><tspan
+         style="text-align:end;text-anchor:end"
+         id="tspan3111"
+         y="759.79077"
+         x="934.375"
+         sodipodi:role="line">m_axis_tvalid</tspan><tspan
+         style="text-align:end;text-anchor:end"
+         id="tspan3113"
+         y="809.79077"
+         x="934.375"
+         sodipodi:role="line">m_axis_tready</tspan></text>
+  </g>
+</svg>
