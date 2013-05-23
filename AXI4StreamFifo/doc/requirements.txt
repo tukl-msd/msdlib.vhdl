@@ -1,0 +1,38 @@
+################################################################################
+## Modify ports
+################################################################################
+
+clk_in, clk_out
+Add a second clock input for asynchronous operation.
+
+################################################################################
+## Introduce VHDL generics:
+################################################################################
+
+NRST : bool
+Select inverted reset.
+
+BW : natural
+Set the bitwidth of the fifo.
+
+DEPTH : natural
+Set the depth of the fifo.
+
+EN_CONFIG_PORT : bool
+Generate a config in port.
+
+EN_STATUS_PORT : bool
+Generate a status out port.
+
+THRESHOLDS : natural
+Generate a threshold signal when THRESHOLD values are in the fifo.
+
+RAM_BASED : bool
+Generate a ram based fifo.
+
+LIFO : bool
+Generate a lifo.
+
+PASSTHROUGH : bool
+Allow instant input bypassing.
+
