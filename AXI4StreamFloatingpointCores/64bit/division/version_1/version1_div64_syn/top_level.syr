@@ -1,0 +1,2403 @@
+Release 14.4 - xst P.49d (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: top_level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_level.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_level"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-1-ff1156
+
+---- Source Options
+Top Module Name                    : top_level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/pkg_global.vhd" into library work
+Parsing package <pkg_global>.
+Parsing package body <pkg_global>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/lzc_shifter.vhd" into library work
+Parsing entity <lzc_shifter>.
+Parsing architecture <sim> of entity <lzc_shifter>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/denorm_unit.vhd" into library work
+Parsing entity <denorm_unit>.
+Parsing architecture <sim> of entity <denorm_unit>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/type_detect.vhd" into library work
+Parsing entity <type_detect>.
+Parsing architecture <SIM> of entity <type_detect>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/transform_unit.vhd" into library work
+Parsing entity <transform_unit>.
+Parsing architecture <SIM> of entity <transform_unit>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/pkg_component.vhd" into library work
+Parsing package <pkg_component>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/float_division.vhd" into library work
+Parsing entity <float_division>.
+Parsing architecture <arch> of entity <float_division>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/fifo.vhd" into library work
+Parsing entity <fifo>.
+Parsing architecture <SIM> of entity <fifo>.
+Parsing entity <valid_buffer>.
+Parsing architecture <SIM> of entity <valid_buffer>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_stall.vhd" into library work
+Parsing entity <data_stall>.
+Parsing architecture <sim> of entity <data_stall>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_extend.vhd" into library work
+Parsing entity <data_extend>.
+Parsing architecture <SIM> of entity <data_extend>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_downsize.vhd" into library work
+Parsing entity <data_downsize>.
+Parsing architecture <SIM> of entity <data_downsize>.
+Parsing VHDL file "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/top_level.vhd" into library work
+Parsing entity <top_level>.
+Parsing architecture <SIM> of entity <top_level>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top_level> (architecture <SIM>) from library <work>.
+
+Elaborating entity <data_stall> (architecture <sim>) from library <work>.
+
+Elaborating entity <type_detect> (architecture <SIM>) from library <work>.
+
+Elaborating entity <transform_unit> (architecture <SIM>) from library <work>.
+
+Elaborating entity <denorm_unit> (architecture <sim>) from library <work>.
+
+Elaborating entity <lzc_shifter> (architecture <sim>) from library <work>.
+WARNING:HDLCompiler:1127 - "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/lzc_shifter.vhd" Line 171: Assignment to temp_data2 ignored, since the identifier is never used
+
+Elaborating entity <data_extend> (architecture <SIM>) from library <work>.
+
+Elaborating entity <fifo> (architecture <SIM>) from library <work>.
+
+Elaborating entity <valid_buffer> (architecture <SIM>) from library <work>.
+
+Elaborating entity <float_division> (architecture <arch>) from library <work>.
+
+Elaborating entity <data_downsize> (architecture <SIM>) from library <work>.
+WARNING:HDLCompiler:1127 - "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_downsize.vhd" Line 95: Assignment to s_d1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_downsize.vhd" Line 97: Assignment to exp_zero ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_level>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/top_level.vhd".
+    Summary:
+	no macro.
+Unit <top_level> synthesized.
+
+Synthesizing Unit <data_stall>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_stall.vhd".
+    Found 3-bit register for signal <stall_data>.
+    Found 64-bit register for signal <d_temp1>.
+    Found 64-bit register for signal <d_temp2>.
+    Found 64-bit register for signal <data_out1>.
+    Found 64-bit register for signal <data_out2>.
+    Found 64-bit register for signal <data_out3>.
+    Found 64-bit register for signal <data_out4>.
+    Found finite state machine <FSM_0> for signal <stall_data>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | aresetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 384 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <data_stall> synthesized.
+
+Synthesizing Unit <type_detect>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/type_detect.vhd".
+    Found 2-bit register for signal <data_type>.
+    Found 64-bit register for signal <temp_data>.
+    Found 64-bit register for signal <temp_d1>.
+    Found finite state machine <FSM_1> for signal <data_type>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | aresetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <type_detect> synthesized.
+
+Synthesizing Unit <transform_unit>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/transform_unit.vhd".
+INFO:Xst:3210 - "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/transform_unit.vhd" line 122: Output port <s_axis_input_tready> of the instance <i_denorm> is unconnected or connected to loadless signal.
+    Found 3-bit register for signal <data_transform>.
+    Found 1-bit register for signal <m_axis_output_wait_out>.
+    Found 64-bit register for signal <norm_data>.
+    Found 1-bit register for signal <denorm_valid>.
+    Found 2-bit register for signal <denorm_flag>.
+    Found 64-bit register for signal <denorm_data>.
+    Found 64-bit register for signal <data_out>.
+    Found 64-bit register for signal <data_d2>.
+    Found finite state machine <FSM_2> for signal <data_transform>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | aresetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 260 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <transform_unit> synthesized.
+
+Synthesizing Unit <denorm_unit>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/denorm_unit.vhd".
+WARNING:Xst:647 - Input <s_axis_input_tdata<52:52>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <denorm_data>.
+    Found 2-bit register for signal <flag_int>.
+    Found 1-bit register for signal <valid_d1>.
+    Found 1-bit register for signal <s_data>.
+    Found 11-bit register for signal <exp_data>.
+    Found 53-bit register for signal <man_data>.
+    Summary:
+	inferred  69 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <denorm_unit> synthesized.
+
+Synthesizing Unit <lzc_shifter>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/lzc_shifter.vhd".
+WARNING:Xst:647 - Input <flag_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <shift_data>.
+    Found 1-bit register for signal <s_data>.
+    Found 11-bit register for signal <exp_data2>.
+    Found 53-bit register for signal <level6>.
+    Found 53-bit register for signal <reg5_d1>.
+    Found 53-bit register for signal <reg4_d1>.
+    Found 53-bit register for signal <reg3_d1>.
+    Found 53-bit register for signal <reg2_d1>.
+    Found 53-bit register for signal <reg1_d1>.
+    Found 64-bit register for signal <temp_d2>.
+INFO:Xst:1799 - State a_32 is never reached in FSM <shift_data>.
+INFO:Xst:1799 - State b_32 is never reached in FSM <shift_data>.
+INFO:Xst:1799 - State c_32 is never reached in FSM <shift_data>.
+INFO:Xst:1799 - State d_32 is never reached in FSM <shift_data>.
+INFO:Xst:1799 - State e_32 is never reached in FSM <shift_data>.
+INFO:Xst:1799 - State f_32 is never reached in FSM <shift_data>.
+    Found finite state machine <FSM_3> for signal <shift_data>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 11                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | aresetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit subtractor for signal <exp_out2> created at line 72.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 394 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <lzc_shifter> synthesized.
+
+Synthesizing Unit <data_extend>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_extend.vhd".
+    Found 2-bit register for signal <ext_data>.
+    Found 64-bit register for signal <data_in>.
+    Found 66-bit register for signal <temp_data>.
+    Found 66-bit register for signal <temp_d1>.
+    Found finite state machine <FSM_4> for signal <ext_data>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | aresetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 196 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <data_extend> synthesized.
+
+Synthesizing Unit <fifo>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/fifo.vhd".
+WARNING:Xst:647 - Input <aresetn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <fifo> synthesized.
+
+Synthesizing Unit <valid_buffer>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/fifo.vhd".
+    Found 1-bit register for signal <output>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <valid_buffer> synthesized.
+
+Synthesizing Unit <float_division>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/float_division.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 13-bit register for signal <expR0_d1>.
+    Found 13-bit register for signal <expR0_d2>.
+    Found 13-bit register for signal <expR0_d3>.
+    Found 13-bit register for signal <expR0_d4>.
+    Found 13-bit register for signal <expR0_d5>.
+    Found 13-bit register for signal <expR0_d6>.
+    Found 13-bit register for signal <expR0_d7>.
+    Found 13-bit register for signal <expR0_d8>.
+    Found 13-bit register for signal <expR0_d9>.
+    Found 13-bit register for signal <expR0_d10>.
+    Found 13-bit register for signal <expR0_d11>.
+    Found 13-bit register for signal <expR0_d12>.
+    Found 13-bit register for signal <expR0_d13>.
+    Found 13-bit register for signal <expR0_d14>.
+    Found 13-bit register for signal <expR0_d15>.
+    Found 13-bit register for signal <expR0_d16>.
+    Found 13-bit register for signal <expR0_d17>.
+    Found 13-bit register for signal <expR0_d18>.
+    Found 13-bit register for signal <expR0_d19>.
+    Found 13-bit register for signal <expR0_d20>.
+    Found 13-bit register for signal <expR0_d21>.
+    Found 13-bit register for signal <expR0_d22>.
+    Found 13-bit register for signal <expR0_d23>.
+    Found 13-bit register for signal <expR0_d24>.
+    Found 13-bit register for signal <expR0_d25>.
+    Found 13-bit register for signal <expR0_d26>.
+    Found 13-bit register for signal <expR0_d27>.
+    Found 13-bit register for signal <expR0_d28>.
+    Found 13-bit register for signal <expR0_d29>.
+    Found 13-bit register for signal <expR0_d30>.
+    Found 13-bit register for signal <expR0_d31>.
+    Found 1-bit register for signal <sR_d1>.
+    Found 1-bit register for signal <sR_d2>.
+    Found 1-bit register for signal <sR_d3>.
+    Found 1-bit register for signal <sR_d4>.
+    Found 1-bit register for signal <sR_d5>.
+    Found 1-bit register for signal <sR_d6>.
+    Found 1-bit register for signal <sR_d7>.
+    Found 1-bit register for signal <sR_d8>.
+    Found 1-bit register for signal <sR_d9>.
+    Found 1-bit register for signal <sR_d10>.
+    Found 1-bit register for signal <sR_d11>.
+    Found 1-bit register for signal <sR_d12>.
+    Found 1-bit register for signal <sR_d13>.
+    Found 1-bit register for signal <sR_d14>.
+    Found 1-bit register for signal <sR_d15>.
+    Found 1-bit register for signal <sR_d16>.
+    Found 1-bit register for signal <sR_d17>.
+    Found 1-bit register for signal <sR_d18>.
+    Found 1-bit register for signal <sR_d19>.
+    Found 1-bit register for signal <sR_d20>.
+    Found 1-bit register for signal <sR_d21>.
+    Found 1-bit register for signal <sR_d22>.
+    Found 1-bit register for signal <sR_d23>.
+    Found 1-bit register for signal <sR_d24>.
+    Found 1-bit register for signal <sR_d25>.
+    Found 1-bit register for signal <sR_d26>.
+    Found 1-bit register for signal <sR_d27>.
+    Found 1-bit register for signal <sR_d28>.
+    Found 1-bit register for signal <sR_d29>.
+    Found 1-bit register for signal <sR_d30>.
+    Found 1-bit register for signal <sR_d31>.
+    Found 1-bit register for signal <sR_d32>.
+    Found 2-bit register for signal <exnR0_d1>.
+    Found 2-bit register for signal <exnR0_d2>.
+    Found 2-bit register for signal <exnR0_d3>.
+    Found 2-bit register for signal <exnR0_d4>.
+    Found 2-bit register for signal <exnR0_d5>.
+    Found 2-bit register for signal <exnR0_d6>.
+    Found 2-bit register for signal <exnR0_d7>.
+    Found 2-bit register for signal <exnR0_d8>.
+    Found 2-bit register for signal <exnR0_d9>.
+    Found 2-bit register for signal <exnR0_d10>.
+    Found 2-bit register for signal <exnR0_d11>.
+    Found 2-bit register for signal <exnR0_d12>.
+    Found 2-bit register for signal <exnR0_d13>.
+    Found 2-bit register for signal <exnR0_d14>.
+    Found 2-bit register for signal <exnR0_d15>.
+    Found 2-bit register for signal <exnR0_d16>.
+    Found 2-bit register for signal <exnR0_d17>.
+    Found 2-bit register for signal <exnR0_d18>.
+    Found 2-bit register for signal <exnR0_d19>.
+    Found 2-bit register for signal <exnR0_d20>.
+    Found 2-bit register for signal <exnR0_d21>.
+    Found 2-bit register for signal <exnR0_d22>.
+    Found 2-bit register for signal <exnR0_d23>.
+    Found 2-bit register for signal <exnR0_d24>.
+    Found 2-bit register for signal <exnR0_d25>.
+    Found 2-bit register for signal <exnR0_d26>.
+    Found 2-bit register for signal <exnR0_d27>.
+    Found 2-bit register for signal <exnR0_d28>.
+    Found 2-bit register for signal <exnR0_d29>.
+    Found 2-bit register for signal <exnR0_d30>.
+    Found 2-bit register for signal <exnR0_d31>.
+    Found 2-bit register for signal <exnR0_d32>.
+    Found 55-bit register for signal <fYTimes3_d1>.
+    Found 55-bit register for signal <fYTimes3_d2>.
+    Found 55-bit register for signal <fYTimes3_d3>.
+    Found 55-bit register for signal <fYTimes3_d4>.
+    Found 55-bit register for signal <fYTimes3_d5>.
+    Found 55-bit register for signal <fYTimes3_d6>.
+    Found 55-bit register for signal <fYTimes3_d7>.
+    Found 55-bit register for signal <fYTimes3_d8>.
+    Found 55-bit register for signal <fYTimes3_d9>.
+    Found 55-bit register for signal <fYTimes3_d10>.
+    Found 55-bit register for signal <fYTimes3_d11>.
+    Found 55-bit register for signal <fYTimes3_d12>.
+    Found 55-bit register for signal <fYTimes3_d13>.
+    Found 55-bit register for signal <fYTimes3_d14>.
+    Found 55-bit register for signal <fYTimes3_d15>.
+    Found 55-bit register for signal <fYTimes3_d16>.
+    Found 55-bit register for signal <fYTimes3_d17>.
+    Found 55-bit register for signal <fYTimes3_d18>.
+    Found 55-bit register for signal <fYTimes3_d19>.
+    Found 55-bit register for signal <fYTimes3_d20>.
+    Found 55-bit register for signal <fYTimes3_d21>.
+    Found 55-bit register for signal <fYTimes3_d22>.
+    Found 55-bit register for signal <fYTimes3_d23>.
+    Found 55-bit register for signal <fYTimes3_d24>.
+    Found 55-bit register for signal <fYTimes3_d25>.
+    Found 55-bit register for signal <fYTimes3_d26>.
+    Found 55-bit register for signal <fYTimes3_d27>.
+    Found 55-bit register for signal <fYTimes3_d28>.
+    Found 55-bit register for signal <fYTimes3_d29>.
+    Found 3-bit register for signal <q28_d1>.
+    Found 3-bit register for signal <q28_d2>.
+    Found 3-bit register for signal <q28_d3>.
+    Found 3-bit register for signal <q28_d4>.
+    Found 3-bit register for signal <q28_d5>.
+    Found 3-bit register for signal <q28_d6>.
+    Found 3-bit register for signal <q28_d7>.
+    Found 3-bit register for signal <q28_d8>.
+    Found 3-bit register for signal <q28_d9>.
+    Found 3-bit register for signal <q28_d10>.
+    Found 3-bit register for signal <q28_d11>.
+    Found 3-bit register for signal <q28_d12>.
+    Found 3-bit register for signal <q28_d13>.
+    Found 3-bit register for signal <q28_d14>.
+    Found 3-bit register for signal <q28_d15>.
+    Found 3-bit register for signal <q28_d16>.
+    Found 3-bit register for signal <q28_d17>.
+    Found 3-bit register for signal <q28_d18>.
+    Found 3-bit register for signal <q28_d19>.
+    Found 3-bit register for signal <q28_d20>.
+    Found 3-bit register for signal <q28_d21>.
+    Found 3-bit register for signal <q28_d22>.
+    Found 3-bit register for signal <q28_d23>.
+    Found 3-bit register for signal <q28_d24>.
+    Found 3-bit register for signal <q28_d25>.
+    Found 3-bit register for signal <q28_d26>.
+    Found 3-bit register for signal <q28_d27>.
+    Found 3-bit register for signal <q28_d28>.
+    Found 55-bit register for signal <w27_d1>.
+    Found 3-bit register for signal <q27_d1>.
+    Found 3-bit register for signal <q27_d2>.
+    Found 3-bit register for signal <q27_d3>.
+    Found 3-bit register for signal <q27_d4>.
+    Found 3-bit register for signal <q27_d5>.
+    Found 3-bit register for signal <q27_d6>.
+    Found 3-bit register for signal <q27_d7>.
+    Found 3-bit register for signal <q27_d8>.
+    Found 3-bit register for signal <q27_d9>.
+    Found 3-bit register for signal <q27_d10>.
+    Found 3-bit register for signal <q27_d11>.
+    Found 3-bit register for signal <q27_d12>.
+    Found 3-bit register for signal <q27_d13>.
+    Found 3-bit register for signal <q27_d14>.
+    Found 3-bit register for signal <q27_d15>.
+    Found 3-bit register for signal <q27_d16>.
+    Found 3-bit register for signal <q27_d17>.
+    Found 3-bit register for signal <q27_d18>.
+    Found 3-bit register for signal <q27_d19>.
+    Found 3-bit register for signal <q27_d20>.
+    Found 3-bit register for signal <q27_d21>.
+    Found 3-bit register for signal <q27_d22>.
+    Found 3-bit register for signal <q27_d23>.
+    Found 3-bit register for signal <q27_d24>.
+    Found 3-bit register for signal <q27_d25>.
+    Found 3-bit register for signal <q27_d26>.
+    Found 3-bit register for signal <q27_d27>.
+    Found 55-bit register for signal <w26_d1>.
+    Found 3-bit register for signal <q26_d1>.
+    Found 3-bit register for signal <q26_d2>.
+    Found 3-bit register for signal <q26_d3>.
+    Found 3-bit register for signal <q26_d4>.
+    Found 3-bit register for signal <q26_d5>.
+    Found 3-bit register for signal <q26_d6>.
+    Found 3-bit register for signal <q26_d7>.
+    Found 3-bit register for signal <q26_d8>.
+    Found 3-bit register for signal <q26_d9>.
+    Found 3-bit register for signal <q26_d10>.
+    Found 3-bit register for signal <q26_d11>.
+    Found 3-bit register for signal <q26_d12>.
+    Found 3-bit register for signal <q26_d13>.
+    Found 3-bit register for signal <q26_d14>.
+    Found 3-bit register for signal <q26_d15>.
+    Found 3-bit register for signal <q26_d16>.
+    Found 3-bit register for signal <q26_d17>.
+    Found 3-bit register for signal <q26_d18>.
+    Found 3-bit register for signal <q26_d19>.
+    Found 3-bit register for signal <q26_d20>.
+    Found 3-bit register for signal <q26_d21>.
+    Found 3-bit register for signal <q26_d22>.
+    Found 3-bit register for signal <q26_d23>.
+    Found 3-bit register for signal <q26_d24>.
+    Found 3-bit register for signal <q26_d25>.
+    Found 3-bit register for signal <q26_d26>.
+    Found 55-bit register for signal <w25_d1>.
+    Found 3-bit register for signal <q25_d1>.
+    Found 3-bit register for signal <q25_d2>.
+    Found 3-bit register for signal <q25_d3>.
+    Found 3-bit register for signal <q25_d4>.
+    Found 3-bit register for signal <q25_d5>.
+    Found 3-bit register for signal <q25_d6>.
+    Found 3-bit register for signal <q25_d7>.
+    Found 3-bit register for signal <q25_d8>.
+    Found 3-bit register for signal <q25_d9>.
+    Found 3-bit register for signal <q25_d10>.
+    Found 3-bit register for signal <q25_d11>.
+    Found 3-bit register for signal <q25_d12>.
+    Found 3-bit register for signal <q25_d13>.
+    Found 3-bit register for signal <q25_d14>.
+    Found 3-bit register for signal <q25_d15>.
+    Found 3-bit register for signal <q25_d16>.
+    Found 3-bit register for signal <q25_d17>.
+    Found 3-bit register for signal <q25_d18>.
+    Found 3-bit register for signal <q25_d19>.
+    Found 3-bit register for signal <q25_d20>.
+    Found 3-bit register for signal <q25_d21>.
+    Found 3-bit register for signal <q25_d22>.
+    Found 3-bit register for signal <q25_d23>.
+    Found 3-bit register for signal <q25_d24>.
+    Found 3-bit register for signal <q25_d25>.
+    Found 55-bit register for signal <w24_d1>.
+    Found 3-bit register for signal <q24_d1>.
+    Found 3-bit register for signal <q24_d2>.
+    Found 3-bit register for signal <q24_d3>.
+    Found 3-bit register for signal <q24_d4>.
+    Found 3-bit register for signal <q24_d5>.
+    Found 3-bit register for signal <q24_d6>.
+    Found 3-bit register for signal <q24_d7>.
+    Found 3-bit register for signal <q24_d8>.
+    Found 3-bit register for signal <q24_d9>.
+    Found 3-bit register for signal <q24_d10>.
+    Found 3-bit register for signal <q24_d11>.
+    Found 3-bit register for signal <q24_d12>.
+    Found 3-bit register for signal <q24_d13>.
+    Found 3-bit register for signal <q24_d14>.
+    Found 3-bit register for signal <q24_d15>.
+    Found 3-bit register for signal <q24_d16>.
+    Found 3-bit register for signal <q24_d17>.
+    Found 3-bit register for signal <q24_d18>.
+    Found 3-bit register for signal <q24_d19>.
+    Found 3-bit register for signal <q24_d20>.
+    Found 3-bit register for signal <q24_d21>.
+    Found 3-bit register for signal <q24_d22>.
+    Found 3-bit register for signal <q24_d23>.
+    Found 3-bit register for signal <q24_d24>.
+    Found 55-bit register for signal <w23_d1>.
+    Found 3-bit register for signal <q23_d1>.
+    Found 3-bit register for signal <q23_d2>.
+    Found 3-bit register for signal <q23_d3>.
+    Found 3-bit register for signal <q23_d4>.
+    Found 3-bit register for signal <q23_d5>.
+    Found 3-bit register for signal <q23_d6>.
+    Found 3-bit register for signal <q23_d7>.
+    Found 3-bit register for signal <q23_d8>.
+    Found 3-bit register for signal <q23_d9>.
+    Found 3-bit register for signal <q23_d10>.
+    Found 3-bit register for signal <q23_d11>.
+    Found 3-bit register for signal <q23_d12>.
+    Found 3-bit register for signal <q23_d13>.
+    Found 3-bit register for signal <q23_d14>.
+    Found 3-bit register for signal <q23_d15>.
+    Found 3-bit register for signal <q23_d16>.
+    Found 3-bit register for signal <q23_d17>.
+    Found 3-bit register for signal <q23_d18>.
+    Found 3-bit register for signal <q23_d19>.
+    Found 3-bit register for signal <q23_d20>.
+    Found 3-bit register for signal <q23_d21>.
+    Found 3-bit register for signal <q23_d22>.
+    Found 3-bit register for signal <q23_d23>.
+    Found 55-bit register for signal <w22_d1>.
+    Found 3-bit register for signal <q22_d1>.
+    Found 3-bit register for signal <q22_d2>.
+    Found 3-bit register for signal <q22_d3>.
+    Found 3-bit register for signal <q22_d4>.
+    Found 3-bit register for signal <q22_d5>.
+    Found 3-bit register for signal <q22_d6>.
+    Found 3-bit register for signal <q22_d7>.
+    Found 3-bit register for signal <q22_d8>.
+    Found 3-bit register for signal <q22_d9>.
+    Found 3-bit register for signal <q22_d10>.
+    Found 3-bit register for signal <q22_d11>.
+    Found 3-bit register for signal <q22_d12>.
+    Found 3-bit register for signal <q22_d13>.
+    Found 3-bit register for signal <q22_d14>.
+    Found 3-bit register for signal <q22_d15>.
+    Found 3-bit register for signal <q22_d16>.
+    Found 3-bit register for signal <q22_d17>.
+    Found 3-bit register for signal <q22_d18>.
+    Found 3-bit register for signal <q22_d19>.
+    Found 3-bit register for signal <q22_d20>.
+    Found 3-bit register for signal <q22_d21>.
+    Found 3-bit register for signal <q22_d22>.
+    Found 55-bit register for signal <w21_d1>.
+    Found 3-bit register for signal <q21_d1>.
+    Found 3-bit register for signal <q21_d2>.
+    Found 3-bit register for signal <q21_d3>.
+    Found 3-bit register for signal <q21_d4>.
+    Found 3-bit register for signal <q21_d5>.
+    Found 3-bit register for signal <q21_d6>.
+    Found 3-bit register for signal <q21_d7>.
+    Found 3-bit register for signal <q21_d8>.
+    Found 3-bit register for signal <q21_d9>.
+    Found 3-bit register for signal <q21_d10>.
+    Found 3-bit register for signal <q21_d11>.
+    Found 3-bit register for signal <q21_d12>.
+    Found 3-bit register for signal <q21_d13>.
+    Found 3-bit register for signal <q21_d14>.
+    Found 3-bit register for signal <q21_d15>.
+    Found 3-bit register for signal <q21_d16>.
+    Found 3-bit register for signal <q21_d17>.
+    Found 3-bit register for signal <q21_d18>.
+    Found 3-bit register for signal <q21_d19>.
+    Found 3-bit register for signal <q21_d20>.
+    Found 3-bit register for signal <q21_d21>.
+    Found 55-bit register for signal <w20_d1>.
+    Found 3-bit register for signal <q20_d1>.
+    Found 3-bit register for signal <q20_d2>.
+    Found 3-bit register for signal <q20_d3>.
+    Found 3-bit register for signal <q20_d4>.
+    Found 3-bit register for signal <q20_d5>.
+    Found 3-bit register for signal <q20_d6>.
+    Found 3-bit register for signal <q20_d7>.
+    Found 3-bit register for signal <q20_d8>.
+    Found 3-bit register for signal <q20_d9>.
+    Found 3-bit register for signal <q20_d10>.
+    Found 3-bit register for signal <q20_d11>.
+    Found 3-bit register for signal <q20_d12>.
+    Found 3-bit register for signal <q20_d13>.
+    Found 3-bit register for signal <q20_d14>.
+    Found 3-bit register for signal <q20_d15>.
+    Found 3-bit register for signal <q20_d16>.
+    Found 3-bit register for signal <q20_d17>.
+    Found 3-bit register for signal <q20_d18>.
+    Found 3-bit register for signal <q20_d19>.
+    Found 3-bit register for signal <q20_d20>.
+    Found 55-bit register for signal <w19_d1>.
+    Found 3-bit register for signal <q19_d1>.
+    Found 3-bit register for signal <q19_d2>.
+    Found 3-bit register for signal <q19_d3>.
+    Found 3-bit register for signal <q19_d4>.
+    Found 3-bit register for signal <q19_d5>.
+    Found 3-bit register for signal <q19_d6>.
+    Found 3-bit register for signal <q19_d7>.
+    Found 3-bit register for signal <q19_d8>.
+    Found 3-bit register for signal <q19_d9>.
+    Found 3-bit register for signal <q19_d10>.
+    Found 3-bit register for signal <q19_d11>.
+    Found 3-bit register for signal <q19_d12>.
+    Found 3-bit register for signal <q19_d13>.
+    Found 3-bit register for signal <q19_d14>.
+    Found 3-bit register for signal <q19_d15>.
+    Found 3-bit register for signal <q19_d16>.
+    Found 3-bit register for signal <q19_d17>.
+    Found 3-bit register for signal <q19_d18>.
+    Found 3-bit register for signal <q19_d19>.
+    Found 55-bit register for signal <w18_d1>.
+    Found 3-bit register for signal <q18_d1>.
+    Found 3-bit register for signal <q18_d2>.
+    Found 3-bit register for signal <q18_d3>.
+    Found 3-bit register for signal <q18_d4>.
+    Found 3-bit register for signal <q18_d5>.
+    Found 3-bit register for signal <q18_d6>.
+    Found 3-bit register for signal <q18_d7>.
+    Found 3-bit register for signal <q18_d8>.
+    Found 3-bit register for signal <q18_d9>.
+    Found 3-bit register for signal <q18_d10>.
+    Found 3-bit register for signal <q18_d11>.
+    Found 3-bit register for signal <q18_d12>.
+    Found 3-bit register for signal <q18_d13>.
+    Found 3-bit register for signal <q18_d14>.
+    Found 3-bit register for signal <q18_d15>.
+    Found 3-bit register for signal <q18_d16>.
+    Found 3-bit register for signal <q18_d17>.
+    Found 3-bit register for signal <q18_d18>.
+    Found 55-bit register for signal <w17_d1>.
+    Found 3-bit register for signal <q17_d1>.
+    Found 3-bit register for signal <q17_d2>.
+    Found 3-bit register for signal <q17_d3>.
+    Found 3-bit register for signal <q17_d4>.
+    Found 3-bit register for signal <q17_d5>.
+    Found 3-bit register for signal <q17_d6>.
+    Found 3-bit register for signal <q17_d7>.
+    Found 3-bit register for signal <q17_d8>.
+    Found 3-bit register for signal <q17_d9>.
+    Found 3-bit register for signal <q17_d10>.
+    Found 3-bit register for signal <q17_d11>.
+    Found 3-bit register for signal <q17_d12>.
+    Found 3-bit register for signal <q17_d13>.
+    Found 3-bit register for signal <q17_d14>.
+    Found 3-bit register for signal <q17_d15>.
+    Found 3-bit register for signal <q17_d16>.
+    Found 3-bit register for signal <q17_d17>.
+    Found 55-bit register for signal <w16_d1>.
+    Found 3-bit register for signal <q16_d1>.
+    Found 3-bit register for signal <q16_d2>.
+    Found 3-bit register for signal <q16_d3>.
+    Found 3-bit register for signal <q16_d4>.
+    Found 3-bit register for signal <q16_d5>.
+    Found 3-bit register for signal <q16_d6>.
+    Found 3-bit register for signal <q16_d7>.
+    Found 3-bit register for signal <q16_d8>.
+    Found 3-bit register for signal <q16_d9>.
+    Found 3-bit register for signal <q16_d10>.
+    Found 3-bit register for signal <q16_d11>.
+    Found 3-bit register for signal <q16_d12>.
+    Found 3-bit register for signal <q16_d13>.
+    Found 3-bit register for signal <q16_d14>.
+    Found 3-bit register for signal <q16_d15>.
+    Found 3-bit register for signal <q16_d16>.
+    Found 55-bit register for signal <w15_d1>.
+    Found 3-bit register for signal <q15_d1>.
+    Found 3-bit register for signal <q15_d2>.
+    Found 3-bit register for signal <q15_d3>.
+    Found 3-bit register for signal <q15_d4>.
+    Found 3-bit register for signal <q15_d5>.
+    Found 3-bit register for signal <q15_d6>.
+    Found 3-bit register for signal <q15_d7>.
+    Found 3-bit register for signal <q15_d8>.
+    Found 3-bit register for signal <q15_d9>.
+    Found 3-bit register for signal <q15_d10>.
+    Found 3-bit register for signal <q15_d11>.
+    Found 3-bit register for signal <q15_d12>.
+    Found 3-bit register for signal <q15_d13>.
+    Found 3-bit register for signal <q15_d14>.
+    Found 3-bit register for signal <q15_d15>.
+    Found 55-bit register for signal <w14_d1>.
+    Found 3-bit register for signal <q14_d1>.
+    Found 3-bit register for signal <q14_d2>.
+    Found 3-bit register for signal <q14_d3>.
+    Found 3-bit register for signal <q14_d4>.
+    Found 3-bit register for signal <q14_d5>.
+    Found 3-bit register for signal <q14_d6>.
+    Found 3-bit register for signal <q14_d7>.
+    Found 3-bit register for signal <q14_d8>.
+    Found 3-bit register for signal <q14_d9>.
+    Found 3-bit register for signal <q14_d10>.
+    Found 3-bit register for signal <q14_d11>.
+    Found 3-bit register for signal <q14_d12>.
+    Found 3-bit register for signal <q14_d13>.
+    Found 3-bit register for signal <q14_d14>.
+    Found 55-bit register for signal <w13_d1>.
+    Found 3-bit register for signal <q13_d1>.
+    Found 3-bit register for signal <q13_d2>.
+    Found 3-bit register for signal <q13_d3>.
+    Found 3-bit register for signal <q13_d4>.
+    Found 3-bit register for signal <q13_d5>.
+    Found 3-bit register for signal <q13_d6>.
+    Found 3-bit register for signal <q13_d7>.
+    Found 3-bit register for signal <q13_d8>.
+    Found 3-bit register for signal <q13_d9>.
+    Found 3-bit register for signal <q13_d10>.
+    Found 3-bit register for signal <q13_d11>.
+    Found 3-bit register for signal <q13_d12>.
+    Found 3-bit register for signal <q13_d13>.
+    Found 55-bit register for signal <w12_d1>.
+    Found 3-bit register for signal <q12_d1>.
+    Found 3-bit register for signal <q12_d2>.
+    Found 3-bit register for signal <q12_d3>.
+    Found 3-bit register for signal <q12_d4>.
+    Found 3-bit register for signal <q12_d5>.
+    Found 3-bit register for signal <q12_d6>.
+    Found 3-bit register for signal <q12_d7>.
+    Found 3-bit register for signal <q12_d8>.
+    Found 3-bit register for signal <q12_d9>.
+    Found 3-bit register for signal <q12_d10>.
+    Found 3-bit register for signal <q12_d11>.
+    Found 3-bit register for signal <q12_d12>.
+    Found 55-bit register for signal <w11_d1>.
+    Found 3-bit register for signal <q11_d1>.
+    Found 3-bit register for signal <q11_d2>.
+    Found 3-bit register for signal <q11_d3>.
+    Found 3-bit register for signal <q11_d4>.
+    Found 3-bit register for signal <q11_d5>.
+    Found 3-bit register for signal <q11_d6>.
+    Found 3-bit register for signal <q11_d7>.
+    Found 3-bit register for signal <q11_d8>.
+    Found 3-bit register for signal <q11_d9>.
+    Found 3-bit register for signal <q11_d10>.
+    Found 3-bit register for signal <q11_d11>.
+    Found 55-bit register for signal <w10_d1>.
+    Found 3-bit register for signal <q10_d1>.
+    Found 3-bit register for signal <q10_d2>.
+    Found 3-bit register for signal <q10_d3>.
+    Found 3-bit register for signal <q10_d4>.
+    Found 3-bit register for signal <q10_d5>.
+    Found 3-bit register for signal <q10_d6>.
+    Found 3-bit register for signal <q10_d7>.
+    Found 3-bit register for signal <q10_d8>.
+    Found 3-bit register for signal <q10_d9>.
+    Found 3-bit register for signal <q10_d10>.
+    Found 55-bit register for signal <w9_d1>.
+    Found 3-bit register for signal <q9_d1>.
+    Found 3-bit register for signal <q9_d2>.
+    Found 3-bit register for signal <q9_d3>.
+    Found 3-bit register for signal <q9_d4>.
+    Found 3-bit register for signal <q9_d5>.
+    Found 3-bit register for signal <q9_d6>.
+    Found 3-bit register for signal <q9_d7>.
+    Found 3-bit register for signal <q9_d8>.
+    Found 3-bit register for signal <q9_d9>.
+    Found 55-bit register for signal <w8_d1>.
+    Found 3-bit register for signal <q8_d1>.
+    Found 3-bit register for signal <q8_d2>.
+    Found 3-bit register for signal <q8_d3>.
+    Found 3-bit register for signal <q8_d4>.
+    Found 3-bit register for signal <q8_d5>.
+    Found 3-bit register for signal <q8_d6>.
+    Found 3-bit register for signal <q8_d7>.
+    Found 3-bit register for signal <q8_d8>.
+    Found 55-bit register for signal <w7_d1>.
+    Found 3-bit register for signal <q7_d1>.
+    Found 3-bit register for signal <q7_d2>.
+    Found 3-bit register for signal <q7_d3>.
+    Found 3-bit register for signal <q7_d4>.
+    Found 3-bit register for signal <q7_d5>.
+    Found 3-bit register for signal <q7_d6>.
+    Found 3-bit register for signal <q7_d7>.
+    Found 55-bit register for signal <w6_d1>.
+    Found 3-bit register for signal <q6_d1>.
+    Found 3-bit register for signal <q6_d2>.
+    Found 3-bit register for signal <q6_d3>.
+    Found 3-bit register for signal <q6_d4>.
+    Found 3-bit register for signal <q6_d5>.
+    Found 3-bit register for signal <q6_d6>.
+    Found 55-bit register for signal <w5_d1>.
+    Found 3-bit register for signal <q5_d1>.
+    Found 3-bit register for signal <q5_d2>.
+    Found 3-bit register for signal <q5_d3>.
+    Found 3-bit register for signal <q5_d4>.
+    Found 3-bit register for signal <q5_d5>.
+    Found 55-bit register for signal <w4_d1>.
+    Found 3-bit register for signal <q4_d1>.
+    Found 3-bit register for signal <q4_d2>.
+    Found 3-bit register for signal <q4_d3>.
+    Found 3-bit register for signal <q4_d4>.
+    Found 55-bit register for signal <w3_d1>.
+    Found 3-bit register for signal <q3_d1>.
+    Found 3-bit register for signal <q3_d2>.
+    Found 3-bit register for signal <q3_d3>.
+    Found 55-bit register for signal <w2_d1>.
+    Found 3-bit register for signal <q2_d1>.
+    Found 3-bit register for signal <q2_d2>.
+    Found 55-bit register for signal <w1_d1>.
+    Found 3-bit register for signal <q1_d1>.
+    Found 55-bit register for signal <w0_d1>.
+    Found 57-bit register for signal <fR0_d1<57:1>>.
+    Found 52-bit register for signal <fRn1_d1<53:2>>.
+    Found 13-bit register for signal <expR1_d1>.
+    Found 1-bit register for signal <round_d1>.
+    Found 52-bit register for signal <fY_d1_dummy[51:0]>.
+    Found 52-bit register for signal <w28_d1_dummy[51:0]>.
+    Found 52-bit register for signal <w28_d2>.
+    Found 52-bit register for signal <fY_d2_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d3_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d4_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d5_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d6_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d7_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d8_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d9_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d10_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d11_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d12_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d13_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d14_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d15_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d16_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d17_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d18_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d19_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d20_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d21_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d22_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d23_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d24_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d25_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d26_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d27_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d28_dummy[51:0]>.
+    Found 52-bit register for signal <fY_d29>.
+    Found 59-bit subtractor for signal <n1781> created at line 1651.
+    Found 55-bit adder for signal <fYTimes3> created at line 885.
+    Found 56-bit adder for signal <w28pad[55]_q28D[55]_add_572_OUT> created at line 910.
+    Found 56-bit adder for signal <w27pad[55]_q27D[55]_add_581_OUT> created at line 935.
+    Found 56-bit adder for signal <w26pad[55]_q26D[55]_add_590_OUT> created at line 960.
+    Found 56-bit adder for signal <w25pad[55]_q25D[55]_add_599_OUT> created at line 985.
+    Found 56-bit adder for signal <w24pad[55]_q24D[55]_add_608_OUT> created at line 1010.
+    Found 56-bit adder for signal <w23pad[55]_q23D[55]_add_617_OUT> created at line 1035.
+    Found 56-bit adder for signal <w22pad[55]_q22D[55]_add_626_OUT> created at line 1060.
+    Found 56-bit adder for signal <w21pad[55]_q21D[55]_add_635_OUT> created at line 1085.
+    Found 56-bit adder for signal <w20pad[55]_q20D[55]_add_644_OUT> created at line 1110.
+    Found 56-bit adder for signal <w19pad[55]_q19D[55]_add_653_OUT> created at line 1135.
+    Found 56-bit adder for signal <w18pad[55]_q18D[55]_add_662_OUT> created at line 1160.
+    Found 56-bit adder for signal <w17pad[55]_q17D[55]_add_671_OUT> created at line 1185.
+    Found 56-bit adder for signal <w16pad[55]_q16D[55]_add_680_OUT> created at line 1210.
+    Found 56-bit adder for signal <w15pad[55]_q15D[55]_add_689_OUT> created at line 1235.
+    Found 56-bit adder for signal <w14pad[55]_q14D[55]_add_698_OUT> created at line 1260.
+    Found 56-bit adder for signal <w13pad[55]_q13D[55]_add_707_OUT> created at line 1285.
+    Found 56-bit adder for signal <w12pad[55]_q12D[55]_add_716_OUT> created at line 1310.
+    Found 56-bit adder for signal <w11pad[55]_q11D[55]_add_725_OUT> created at line 1335.
+    Found 56-bit adder for signal <w10pad[55]_q10D[55]_add_734_OUT> created at line 1360.
+    Found 56-bit adder for signal <w9pad[55]_q9D[55]_add_743_OUT> created at line 1385.
+    Found 56-bit adder for signal <w8pad[55]_q8D[55]_add_752_OUT> created at line 1410.
+    Found 56-bit adder for signal <w7pad[55]_q7D[55]_add_761_OUT> created at line 1435.
+    Found 56-bit adder for signal <w6pad[55]_q6D[55]_add_770_OUT> created at line 1460.
+    Found 56-bit adder for signal <w5pad[55]_q5D[55]_add_779_OUT> created at line 1485.
+    Found 56-bit adder for signal <w4pad[55]_q4D[55]_add_788_OUT> created at line 1510.
+    Found 56-bit adder for signal <w3pad[55]_q3D[55]_add_797_OUT> created at line 1535.
+    Found 56-bit adder for signal <w2pad[55]_q2D[55]_add_806_OUT> created at line 1560.
+    Found 56-bit adder for signal <w1pad[55]_q1D[55]_add_815_OUT> created at line 1585.
+    Found 13-bit adder for signal <expR1> created at line 1658.
+    Found 65-bit adder for signal <expfracR> created at line 1663.
+    Found 13-bit subtractor for signal <expR0> created at line 28.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_572_OUT<55:0>> created at line 909.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_581_OUT<55:0>> created at line 934.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_590_OUT<55:0>> created at line 959.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_599_OUT<55:0>> created at line 984.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_608_OUT<55:0>> created at line 1009.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_617_OUT<55:0>> created at line 1034.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_626_OUT<55:0>> created at line 1059.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_635_OUT<55:0>> created at line 1084.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_644_OUT<55:0>> created at line 1109.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_653_OUT<55:0>> created at line 1134.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_662_OUT<55:0>> created at line 1159.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_671_OUT<55:0>> created at line 1184.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_680_OUT<55:0>> created at line 1209.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_689_OUT<55:0>> created at line 1234.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_698_OUT<55:0>> created at line 1259.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_707_OUT<55:0>> created at line 1284.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_716_OUT<55:0>> created at line 1309.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_725_OUT<55:0>> created at line 1334.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_734_OUT<55:0>> created at line 1359.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_743_OUT<55:0>> created at line 1384.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_752_OUT<55:0>> created at line 1409.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_761_OUT<55:0>> created at line 1434.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_770_OUT<55:0>> created at line 1459.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_779_OUT<55:0>> created at line 1484.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_788_OUT<55:0>> created at line 1509.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_797_OUT<55:0>> created at line 1534.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_806_OUT<55:0>> created at line 1559.
+    Found 56-bit subtractor for signal <GND_19_o_GND_19_o_sub_815_OUT<55:0>> created at line 1584.
+    Found 16x2-bit Read Only RAM for signal <exnR0>
+    Found 32x3-bit Read Only RAM for signal <q28>
+    Found 32x3-bit Read Only RAM for signal <q27>
+    Found 32x3-bit Read Only RAM for signal <q26>
+    Found 32x3-bit Read Only RAM for signal <q25>
+    Found 32x3-bit Read Only RAM for signal <q24>
+    Found 32x3-bit Read Only RAM for signal <q23>
+    Found 32x3-bit Read Only RAM for signal <q22>
+    Found 32x3-bit Read Only RAM for signal <q21>
+    Found 32x3-bit Read Only RAM for signal <q20>
+    Found 32x3-bit Read Only RAM for signal <q19>
+    Found 32x3-bit Read Only RAM for signal <q18>
+    Found 32x3-bit Read Only RAM for signal <q17>
+    Found 32x3-bit Read Only RAM for signal <q16>
+    Found 32x3-bit Read Only RAM for signal <q15>
+    Found 32x3-bit Read Only RAM for signal <q14>
+    Found 32x3-bit Read Only RAM for signal <q13>
+    Found 32x3-bit Read Only RAM for signal <q12>
+    Found 32x3-bit Read Only RAM for signal <q11>
+    Found 32x3-bit Read Only RAM for signal <q10>
+    Found 32x3-bit Read Only RAM for signal <q9>
+    Found 32x3-bit Read Only RAM for signal <q8>
+    Found 32x3-bit Read Only RAM for signal <q7>
+    Found 32x3-bit Read Only RAM for signal <q6>
+    Found 32x3-bit Read Only RAM for signal <q5>
+    Found 32x3-bit Read Only RAM for signal <q4>
+    Found 32x3-bit Read Only RAM for signal <q3>
+    Found 32x3-bit Read Only RAM for signal <q2>
+    Found 32x3-bit Read Only RAM for signal <q1>
+    WARNING:Xst:2404 -  FFs/Latches <fY_d1<52:52>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <w28_d1<54:53>> (without init value) have a constant value of 0 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <w28_d1<53:53>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <w28_d2<54:53>> (without init value) have a constant value of 0 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <w28_d2<53:53>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d2<52:52>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d3<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d4<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d5<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d6<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d7<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d8<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d9<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d10<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d11<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d12<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d13<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d14<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d15<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d16<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d17<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d18<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d19<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d20<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d21<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d22<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d23<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d24<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d25<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d26<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d27<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d28<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    WARNING:Xst:2404 -  FFs/Latches <fY_d29<52:51>> (without init value) have a constant value of 1 in block <float_division>.
+    Summary:
+	inferred  29 RAM(s).
+	inferred  33 Adder/Subtractor(s).
+	inferred 6587 D-type flip-flop(s).
+	inferred 200 Multiplexer(s).
+Unit <float_division> synthesized.
+
+Synthesizing Unit <data_downsize>.
+    Related source file is "/net/user/r1/unix/okhaliq/Desktop/mail send/64 bit versions/division/version_1/src/version1_div64_syn/data_downsize.vhd".
+    Found 2-bit register for signal <down_data>.
+    Found 66-bit register for signal <data_in>.
+    Found 64-bit register for signal <temp_data>.
+    Found 64-bit register for signal <temp_d1>.
+    Found finite state machine <FSM_5> for signal <down_data>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | aresetn (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 194 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <data_downsize> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 29
+ 16x2-bit single-port Read Only RAM                    : 1
+ 32x3-bit single-port Read Only RAM                    : 28
+# Adders/Subtractors                                   : 35
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 55-bit adder                                          : 1
+ 56-bit addsub                                         : 28
+ 59-bit subtractor                                     : 1
+ 65-bit adder                                          : 1
+# Registers                                            : 687
+ 1-bit register                                        : 77
+ 11-bit register                                       : 4
+ 13-bit register                                       : 31
+ 2-bit register                                        : 36
+ 3-bit register                                        : 406
+ 52-bit register                                       : 31
+ 53-bit register                                       : 14
+ 55-bit register                                       : 57
+ 57-bit register                                       : 1
+ 64-bit register                                       : 24
+ 65-bit register                                       : 1
+ 66-bit register                                       : 5
+# Multiplexers                                         : 232
+ 1-bit 2-to-1 multiplexer                              : 6
+ 11-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 6
+ 3-bit 2-to-1 multiplexer                              : 1
+ 52-bit 2-to-1 multiplexer                             : 6
+ 53-bit 2-to-1 multiplexer                             : 10
+ 54-bit 2-to-1 multiplexer                             : 1
+ 56-bit 2-to-1 multiplexer                             : 196
+ 64-bit 2-to-1 multiplexer                             : 5
+# FSMs                                                 : 10
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <w27_d1_0> in Unit <i_division_64> is equivalent to the following 27 FFs/Latches, which will be removed : <w26_d1_0> <w25_d1_0> <w24_d1_0> <w23_d1_0> <w22_d1_0> <w21_d1_0> <w20_d1_0> <w19_d1_0> <w18_d1_0> <w17_d1_0> <w16_d1_0> <w15_d1_0> <w14_d1_0> <w13_d1_0> <w12_d1_0> <w11_d1_0> <w10_d1_0> <w9_d1_0> <w8_d1_0> <w7_d1_0> <w6_d1_0> <w5_d1_0> <w4_d1_0> <w3_d1_0> <w2_d1_0> <w1_d1_0> <w0_d1_0> 
+WARNING:Xst:1710 - FF/Latch <level6_52> (without init value) has a constant value of 0 in block <i_lzc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <man_data_52> (without init value) has a constant value of 0 in block <i_denorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <denorm_flag_1> (without init value) has a constant value of 1 in block <i_transform>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <level6_52> (without init value) has a constant value of 0 in block <i_lzc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <man_data_52> (without init value) has a constant value of 0 in block <i_denorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <denorm_flag_1> (without init value) has a constant value of 1 in block <i_trans2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <w27_d1_0> (without init value) has a constant value of 0 in block <i_division_64>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <denorm_data_52> of sequential type is unconnected in block <i_transform>.
+WARNING:Xst:2677 - Node <denorm_data_52> of sequential type is unconnected in block <i_trans2>.
+WARNING:Xst:2677 - Node <q28_d1_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d2_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d3_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d4_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d5_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d6_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d7_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d8_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d9_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d10_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d11_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d12_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d13_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d14_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d15_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d16_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d17_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d18_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d19_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d20_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d21_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d22_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d23_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d24_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d25_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d26_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d27_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2677 - Node <q28_d28_2> of sequential type is unconnected in block <i_division_64>.
+WARNING:Xst:2404 -  FFs/Latches <man_data<52:52>> (without init value) have a constant value of 0 in block <denorm_unit>.
+
+Synthesizing (advanced) Unit <float_division>.
+INFO:Xst:3231 - The small RAM <Mram_exnR0> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 2-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(X<65:64>,Y<65:64>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <exnR0>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q27> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w27_d1<54:51>,fY_d3_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q27>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q26> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w26_d1<54:51>,fY_d4_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q26>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q25> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w25_d1<54:51>,fY_d5_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q25>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q24> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w24_d1<54:51>,fY_d6_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q24>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q23> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w23_d1<54:51>,fY_d7_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q23>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q22> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w22_d1<54:51>,fY_d8_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q22>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q21> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w21_d1<54:51>,fY_d9_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q21>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q20> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w20_d1<54:51>,fY_d10_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q20>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q19> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w19_d1<54:51>,fY_d11_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q19>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q18> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w18_d1<54:51>,fY_d12_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q18>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q17> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w17_d1<54:51>,fY_d13_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q17>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q16> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w16_d1<54:51>,fY_d14_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q16>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q15> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w15_d1<54:51>,fY_d15_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q15>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q14> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w14_d1<54:51>,fY_d16_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q14>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q13> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w13_d1<54:51>,fY_d17_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q13>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q12> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w12_d1<54:51>,fY_d18_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q12>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q11> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w11_d1<54:51>,fY_d19_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q11>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q10> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w10_d1<54:51>,fY_d20_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q10>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q9> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w9_d1<54:51>,fY_d21_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q9>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q8> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w8_d1<54:51>,fY_d22_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q8>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q7> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w7_d1<54:51>,fY_d23_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q7>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q6> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w6_d1<54:51>,fY_d24_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q6>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q5> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w5_d1<54:51>,fY_d25_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q5>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q4> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w4_d1<54:51>,fY_d26_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q4>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w3_d1<54:51>,fY_d27_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q3>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w2_d1<54:51>,fY_d28_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q2>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(w1_d1<54:51>,fY_d29<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q1>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_q28> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("001",w28_d2<51>,fY_d2_dummy[51:0]<51>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <q28>           |          |
+    -----------------------------------------------------------------------
+Unit <float_division> synthesized (advanced).
+WARNING:Xst:2677 - Node <q28_d1_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d2_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d3_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d4_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d5_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d6_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d7_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d8_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d9_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d10_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d11_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d12_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d13_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d14_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d15_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d16_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d17_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d18_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d19_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d20_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d21_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d22_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d23_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d24_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d25_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d26_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d27_2> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <q28_d28_2> of sequential type is unconnected in block <float_division>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 29
+ 16x2-bit single-port distributed Read Only RAM        : 1
+ 32x3-bit single-port distributed Read Only RAM        : 28
+# Adders/Subtractors                                   : 35
+ 11-bit subtractor                                     : 2
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 55-bit adder                                          : 1
+ 56-bit addsub                                         : 28
+ 58-bit subtractor                                     : 1
+ 65-bit adder                                          : 1
+# Registers                                            : 9261
+ Flip-Flops                                            : 9261
+# Multiplexers                                         : 459
+ 1-bit 2-to-1 multiplexer                              : 238
+ 11-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 1
+ 52-bit 2-to-1 multiplexer                             : 4
+ 53-bit 2-to-1 multiplexer                             : 10
+ 54-bit 2-to-1 multiplexer                             : 1
+ 56-bit 2-to-1 multiplexer                             : 196
+ 64-bit 2-to-1 multiplexer                             : 3
+# FSMs                                                 : 10
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <w0_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w1_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w2_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w3_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w4_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w5_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w6_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w7_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w8_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w9_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w10_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w11_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w12_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w13_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w14_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w15_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w16_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w17_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w18_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w19_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w20_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w21_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w22_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w23_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w24_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w25_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w26_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <w27_d1_0> (without init value) has a constant value of 0 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <level6_52> (without init value) has a constant value of 0 in block <lzc_shifter>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i_datastall/FSM_0> on signal <stall_data[1:3]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ idle   | 000
+ pro_a  | 001
+ pro_b  | 010
+ both   | 011
+ noforw | 100
+ forw   | 101
+--------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i_detect_1/FSM_1> on signal <data_type[1:2]> with user encoding.
+Optimizing FSM <i_detect_2/FSM_1> on signal <data_type[1:2]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ idle   | 00
+ noforw | 01
+ forw   | 10
+--------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i_transform/FSM_2> on signal <data_transform[1:3]> with user encoding.
+Optimizing FSM <i_trans2/FSM_2> on signal <data_transform[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 000
+ norm  | 001
+ subn  | 010
+ sb_1  | 011
+ forw  | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i_transform/i_denorm/i_lzc/FSM_3> on signal <shift_data[1:4]> with user encoding.
+Optimizing FSM <i_trans2/i_denorm/i_lzc/FSM_3> on signal <shift_data[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 0000
+ a_32  | unreached
+ a_64  | 0010
+ b_32  | unreached
+ b_64  | 0100
+ c_32  | unreached
+ c_64  | 0110
+ d_32  | unreached
+ d_64  | 1000
+ e_32  | unreached
+ e_64  | 1010
+ f_32  | unreached
+ f_64  | 1100
+ g_64  | 1101
+ forw  | 1110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i_extend_1/FSM_4> on signal <ext_data[1:2]> with user encoding.
+Optimizing FSM <i_extend_2/FSM_4> on signal <ext_data[1:2]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ idle   | 00
+ extn   | 01
+ noforw | 10
+ forw   | 11
+--------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i_downsize/FSM_5> on signal <down_data[1:2]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ idle   | 00
+ down   | 01
+ noforw | 10
+ forw   | 11
+--------------------
+WARNING:Xst:1710 - FF/Latch <q28_d1_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d2_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d3_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d4_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d5_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d6_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d7_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d8_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d9_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d10_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d11_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d12_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d13_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d14_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d15_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d16_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d17_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d18_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d19_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d20_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d21_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d22_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d23_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d24_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d25_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d26_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d27_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q28_d28_1> (without init value) has a constant value of 1 in block <float_division>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <fYTimes3_d1_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d2_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d3_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d4_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d5_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d6_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d7_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d8_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d9_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d10_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d11_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d12_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d13_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d14_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d15_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d16_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d17_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d18_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d19_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d20_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d21_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d22_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d23_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d24_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d25_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d26_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d27_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d28_54> of sequential type is unconnected in block <float_division>.
+WARNING:Xst:2677 - Node <fYTimes3_d29_54> of sequential type is unconnected in block <float_division>.
+INFO:Xst:2261 - The FF/Latch <fY_d1_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d1_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d2_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d2_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d3_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d3_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d4_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d4_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d5_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d5_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d6_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d6_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d7_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d7_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d8_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d8_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d9_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d9_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d10_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d10_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d11_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d11_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d12_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d12_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d13_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d13_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d14_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d14_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d15_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d15_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d16_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d16_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d17_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d17_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d18_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d18_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d19_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d19_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d20_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d20_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d21_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d21_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d22_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d22_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d23_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d23_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d24_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d24_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d25_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d25_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d26_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d26_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d27_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d27_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d28_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d28_0> 
+INFO:Xst:2261 - The FF/Latch <fY_d29_0> in Unit <float_division> is equivalent to the following FF/Latch, which will be removed : <fYTimes3_d29_0> 
+
+Optimizing unit <top_level> ...
+
+Optimizing unit <data_stall> ...
+
+Optimizing unit <type_detect> ...
+
+Optimizing unit <transform_unit> ...
+
+Optimizing unit <denorm_unit> ...
+
+Optimizing unit <lzc_shifter> ...
+
+Optimizing unit <data_extend> ...
+
+Optimizing unit <fifo> ...
+
+Optimizing unit <float_division> ...
+
+Optimizing unit <data_downsize> ...
+WARNING:Xst:1710 - FF/Latch <i_trans2/denorm_flag_1> (without init value) has a constant value of 1 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_transform/denorm_flag_1> (without init value) has a constant value of 1 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <i_trans2/denorm_data_52> of sequential type is unconnected in block <top_level>.
+WARNING:Xst:2677 - Node <i_transform/denorm_data_52> of sequential type is unconnected in block <top_level>.
+WARNING:Xst:2677 - Node <i_transform/i_denorm/flag_int_1> of sequential type is unconnected in block <top_level>.
+WARNING:Xst:2677 - Node <i_transform/i_denorm/flag_int_0> of sequential type is unconnected in block <top_level>.
+WARNING:Xst:2677 - Node <i_trans2/i_denorm/flag_int_1> of sequential type is unconnected in block <top_level>.
+WARNING:Xst:2677 - Node <i_trans2/i_denorm/flag_int_0> of sequential type is unconnected in block <top_level>.
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d12_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d12_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d8_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d8_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d28_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d28_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d5_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d5_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d30_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d30_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d25_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d25_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d2_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d2_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d22_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d22_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d17_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d17_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d14_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d14_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d11_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d11_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d7_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d7_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d27_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d27_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d4_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d4_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d24_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d24_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d19_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d19_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d1_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d1_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d21_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d21_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d16_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d16_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d13_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d13_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d10_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d10_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d9_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d9_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d29_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d29_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d6_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d6_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d31_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d31_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d26_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d26_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d3_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d3_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d23_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d23_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d18_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d18_11> 
+INFO:Xst:2261 - The FF/Latch <i_transform/i_denorm/exp_data_0> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_transform/i_denorm/valid_d1> 
+INFO:Xst:2261 - The FF/Latch <i_trans2/i_denorm/exp_data_0> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_trans2/i_denorm/valid_d1> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d20_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d20_11> 
+INFO:Xst:2261 - The FF/Latch <i_division_64/expR0_d15_12> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <i_division_64/expR0_d15_11> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_level, actual ratio is 8.
+
+Final Macro Processing ...
+
+Processing Unit <top_level> :
+	Found 31-bit shift register for signal <i_fifo/G1[32].buffer_right.i_buffer/output>.
+	Found 2-bit shift register for signal <i_division_64/q2_d2_2>.
+	Found 2-bit shift register for signal <i_division_64/q2_d2_1>.
+	Found 2-bit shift register for signal <i_division_64/q2_d2_0>.
+	Found 3-bit shift register for signal <i_division_64/q3_d3_2>.
+	Found 3-bit shift register for signal <i_division_64/q3_d3_1>.
+	Found 3-bit shift register for signal <i_division_64/q3_d3_0>.
+	Found 4-bit shift register for signal <i_division_64/q4_d4_2>.
+	Found 4-bit shift register for signal <i_division_64/q4_d4_1>.
+	Found 4-bit shift register for signal <i_division_64/q4_d4_0>.
+	Found 5-bit shift register for signal <i_division_64/q5_d5_2>.
+	Found 5-bit shift register for signal <i_division_64/q5_d5_1>.
+	Found 5-bit shift register for signal <i_division_64/q5_d5_0>.
+	Found 6-bit shift register for signal <i_division_64/q6_d6_2>.
+	Found 6-bit shift register for signal <i_division_64/q6_d6_1>.
+	Found 6-bit shift register for signal <i_division_64/q6_d6_0>.
+	Found 7-bit shift register for signal <i_division_64/q7_d7_2>.
+	Found 7-bit shift register for signal <i_division_64/q7_d7_1>.
+	Found 7-bit shift register for signal <i_division_64/q7_d7_0>.
+	Found 8-bit shift register for signal <i_division_64/q8_d8_2>.
+	Found 8-bit shift register for signal <i_division_64/q8_d8_1>.
+	Found 8-bit shift register for signal <i_division_64/q8_d8_0>.
+	Found 9-bit shift register for signal <i_division_64/q9_d9_2>.
+	Found 9-bit shift register for signal <i_division_64/q9_d9_1>.
+	Found 9-bit shift register for signal <i_division_64/q9_d9_0>.
+	Found 10-bit shift register for signal <i_division_64/q10_d10_2>.
+	Found 10-bit shift register for signal <i_division_64/q10_d10_1>.
+	Found 10-bit shift register for signal <i_division_64/q10_d10_0>.
+	Found 11-bit shift register for signal <i_division_64/q11_d11_2>.
+	Found 11-bit shift register for signal <i_division_64/q11_d11_1>.
+	Found 11-bit shift register for signal <i_division_64/q11_d11_0>.
+	Found 12-bit shift register for signal <i_division_64/q12_d12_2>.
+	Found 12-bit shift register for signal <i_division_64/q12_d12_1>.
+	Found 12-bit shift register for signal <i_division_64/q12_d12_0>.
+	Found 13-bit shift register for signal <i_division_64/q13_d13_2>.
+	Found 13-bit shift register for signal <i_division_64/q13_d13_1>.
+	Found 13-bit shift register for signal <i_division_64/q13_d13_0>.
+	Found 14-bit shift register for signal <i_division_64/q14_d14_2>.
+	Found 14-bit shift register for signal <i_division_64/q14_d14_1>.
+	Found 14-bit shift register for signal <i_division_64/q14_d14_0>.
+	Found 15-bit shift register for signal <i_division_64/q15_d15_2>.
+	Found 15-bit shift register for signal <i_division_64/q15_d15_1>.
+	Found 15-bit shift register for signal <i_division_64/q15_d15_0>.
+	Found 16-bit shift register for signal <i_division_64/q16_d16_2>.
+	Found 16-bit shift register for signal <i_division_64/q16_d16_1>.
+	Found 16-bit shift register for signal <i_division_64/q16_d16_0>.
+	Found 17-bit shift register for signal <i_division_64/q17_d17_2>.
+	Found 17-bit shift register for signal <i_division_64/q17_d17_1>.
+	Found 17-bit shift register for signal <i_division_64/q17_d17_0>.
+	Found 18-bit shift register for signal <i_division_64/q18_d18_2>.
+	Found 18-bit shift register for signal <i_division_64/q18_d18_1>.
+	Found 18-bit shift register for signal <i_division_64/q18_d18_0>.
+	Found 19-bit shift register for signal <i_division_64/q19_d19_2>.
+	Found 19-bit shift register for signal <i_division_64/q19_d19_1>.
+	Found 19-bit shift register for signal <i_division_64/q19_d19_0>.
+	Found 20-bit shift register for signal <i_division_64/q20_d20_2>.
+	Found 20-bit shift register for signal <i_division_64/q20_d20_1>.
+	Found 20-bit shift register for signal <i_division_64/q20_d20_0>.
+	Found 21-bit shift register for signal <i_division_64/q21_d21_2>.
+	Found 21-bit shift register for signal <i_division_64/q21_d21_1>.
+	Found 21-bit shift register for signal <i_division_64/q21_d21_0>.
+	Found 22-bit shift register for signal <i_division_64/q22_d22_2>.
+	Found 22-bit shift register for signal <i_division_64/q22_d22_1>.
+	Found 22-bit shift register for signal <i_division_64/q22_d22_0>.
+	Found 23-bit shift register for signal <i_division_64/q23_d23_2>.
+	Found 23-bit shift register for signal <i_division_64/q23_d23_1>.
+	Found 23-bit shift register for signal <i_division_64/q23_d23_0>.
+	Found 24-bit shift register for signal <i_division_64/q24_d24_2>.
+	Found 24-bit shift register for signal <i_division_64/q24_d24_1>.
+	Found 24-bit shift register for signal <i_division_64/q24_d24_0>.
+	Found 25-bit shift register for signal <i_division_64/q25_d25_2>.
+	Found 25-bit shift register for signal <i_division_64/q25_d25_1>.
+	Found 25-bit shift register for signal <i_division_64/q25_d25_0>.
+	Found 26-bit shift register for signal <i_division_64/q26_d26_2>.
+	Found 26-bit shift register for signal <i_division_64/q26_d26_1>.
+	Found 26-bit shift register for signal <i_division_64/q26_d26_0>.
+	Found 27-bit shift register for signal <i_division_64/q27_d27_2>.
+	Found 27-bit shift register for signal <i_division_64/q27_d27_1>.
+	Found 27-bit shift register for signal <i_division_64/q27_d27_0>.
+	Found 31-bit shift register for signal <i_division_64/exnR0_d32_1>.
+	Found 31-bit shift register for signal <i_division_64/exnR0_d32_0>.
+	Found 31-bit shift register for signal <i_division_64/sR_d32>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_12>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_10>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_9>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_8>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_7>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_6>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_5>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_4>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_3>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_2>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_1>.
+	Found 31-bit shift register for signal <i_division_64/expR0_d31_0>.
+	Found 27-bit shift register for signal <i_division_64/q28_d28_0>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_53>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_52>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_51>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_50>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_49>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_48>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_47>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_46>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_45>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_44>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_43>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_42>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_41>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_40>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_39>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_38>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_37>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_36>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_35>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_34>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_33>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_32>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_31>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_30>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_29>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_28>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_27>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_26>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_25>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_24>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_23>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_22>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_21>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_20>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_19>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_18>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_17>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_16>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_15>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_14>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_13>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_12>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_11>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_10>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_9>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_8>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_7>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_6>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_5>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_4>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_3>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_2>.
+	Found 2-bit shift register for signal <i_division_64/fYTimes3_d2_1>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_51>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_50>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_49>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_48>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_47>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_46>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_45>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_44>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_43>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_42>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_41>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_40>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_39>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_38>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_37>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_36>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_35>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_34>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_33>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_32>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_31>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_30>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_29>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_28>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_27>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_26>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_25>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_24>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_23>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_22>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_21>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_20>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_19>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_18>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_17>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_16>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_15>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_14>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_13>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_12>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_11>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_10>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_9>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_8>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_7>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_6>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_5>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_4>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_3>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_2>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_1>.
+	Found 2-bit shift register for signal <i_division_64/fY_d2_0>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_51>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_50>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_49>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_48>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_47>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_46>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_45>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_44>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_43>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_42>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_41>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_40>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_39>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_38>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_37>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_36>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_35>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_34>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_33>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_32>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_31>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_30>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_29>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_28>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_27>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_26>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_25>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_24>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_23>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_22>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_21>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_20>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_19>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_18>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_17>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_16>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_15>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_14>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_13>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_12>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_11>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_10>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_9>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_8>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_7>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_6>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_5>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_4>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_3>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_2>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_1>.
+	Found 2-bit shift register for signal <i_division_64/w28_d2_0>.
+Unit <top_level> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 7163
+ Flip-Flops                                            : 7163
+# Shift Registers                                      : 252
+ 10-bit shift register                                 : 3
+ 11-bit shift register                                 : 3
+ 12-bit shift register                                 : 3
+ 13-bit shift register                                 : 3
+ 14-bit shift register                                 : 3
+ 15-bit shift register                                 : 3
+ 16-bit shift register                                 : 3
+ 17-bit shift register                                 : 3
+ 18-bit shift register                                 : 3
+ 19-bit shift register                                 : 3
+ 2-bit shift register                                  : 160
+ 20-bit shift register                                 : 3
+ 21-bit shift register                                 : 3
+ 22-bit shift register                                 : 3
+ 23-bit shift register                                 : 3
+ 24-bit shift register                                 : 3
+ 25-bit shift register                                 : 3
+ 26-bit shift register                                 : 3
+ 27-bit shift register                                 : 4
+ 3-bit shift register                                  : 3
+ 31-bit shift register                                 : 16
+ 4-bit shift register                                  : 3
+ 5-bit shift register                                  : 3
+ 6-bit shift register                                  : 3
+ 7-bit shift register                                  : 3
+ 8-bit shift register                                  : 3
+ 9-bit shift register                                  : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_level.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 8306
+#      GND                         : 1
+#      INV                         : 48
+#      LUT1                        : 66
+#      LUT2                        : 210
+#      LUT3                        : 2407
+#      LUT4                        : 180
+#      LUT5                        : 271
+#      LUT6                        : 1678
+#      MUXCY                       : 1708
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 1732
+# FlipFlops/Latches                : 7414
+#      FD                          : 4484
+#      FDC                         : 29
+#      FDE                         : 2775
+#      FDRE                        : 126
+# Shift Registers                  : 252
+#      SRLC16E                     : 205
+#      SRLC32E                     : 47
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 199
+#      IBUF                        : 132
+#      OBUF                        : 67
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            7414  out of  301440     2%  
+ Number of Slice LUTs:                 5112  out of  150720     3%  
+    Number used as Logic:              4860  out of  150720     3%  
+    Number used as Memory:              252  out of  58400     0%  
+       Number used as SRL:              252
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   9115
+   Number with an unused Flip Flop:    1701  out of   9115    18%  
+   Number with an unused LUT:          4003  out of   9115    43%  
+   Number of fully used LUT-FF pairs:  3411  out of   9115    37%  
+   Number of unique control sets:        44
+
+IO Utilization: 
+ Number of IOs:                         200
+ Number of bonded IOBs:                 200  out of    600    33%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+aclk                               | BUFGP                  | 7666  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.012ns (Maximum Frequency: 249.240MHz)
+   Minimum input arrival time before clock: 1.841ns
+   Maximum output required time after clock: 1.607ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'aclk'
+  Clock period: 4.012ns (frequency: 249.240MHz)
+  Total number of paths / destination ports: 1039067 / 10312
+-------------------------------------------------------------------------
+Delay:               4.012ns (Levels of Logic = 56)
+  Source:            i_division_64/w1_d1_53 (FF)
+  Destination:       i_division_64/w0_d1_54 (FF)
+  Source Clock:      aclk rising
+  Destination Clock: aclk rising
+
+  Data Path: i_division_64/w1_d1_53 to i_division_64/w0_d1_54
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.375   0.834  i_division_64/w1_d1_53 (i_division_64/w1_d1_53)
+     LUT5:I0->O           51   0.068   0.648  i_division_64/Mmux_q1D1021 (i_division_64/Mmux_q1D102)
+     LUT6:I4->O            1   0.068   0.417  i_division_64/Mmux_q1D121 (i_division_64/q1D<1>)
+     LUT6:I5->O            1   0.068   0.000  i_division_64/Maddsub_w0full_lut<1> (i_division_64/Maddsub_w0full_lut<1>)
+     MUXCY:S->O            1   0.290   0.000  i_division_64/Maddsub_w0full_cy<1> (i_division_64/Maddsub_w0full_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<2> (i_division_64/Maddsub_w0full_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<3> (i_division_64/Maddsub_w0full_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<4> (i_division_64/Maddsub_w0full_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<5> (i_division_64/Maddsub_w0full_cy<5>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<6> (i_division_64/Maddsub_w0full_cy<6>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<7> (i_division_64/Maddsub_w0full_cy<7>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<8> (i_division_64/Maddsub_w0full_cy<8>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<9> (i_division_64/Maddsub_w0full_cy<9>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<10> (i_division_64/Maddsub_w0full_cy<10>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<11> (i_division_64/Maddsub_w0full_cy<11>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<12> (i_division_64/Maddsub_w0full_cy<12>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<13> (i_division_64/Maddsub_w0full_cy<13>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<14> (i_division_64/Maddsub_w0full_cy<14>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<15> (i_division_64/Maddsub_w0full_cy<15>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<16> (i_division_64/Maddsub_w0full_cy<16>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<17> (i_division_64/Maddsub_w0full_cy<17>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<18> (i_division_64/Maddsub_w0full_cy<18>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<19> (i_division_64/Maddsub_w0full_cy<19>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<20> (i_division_64/Maddsub_w0full_cy<20>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<21> (i_division_64/Maddsub_w0full_cy<21>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<22> (i_division_64/Maddsub_w0full_cy<22>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<23> (i_division_64/Maddsub_w0full_cy<23>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<24> (i_division_64/Maddsub_w0full_cy<24>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<25> (i_division_64/Maddsub_w0full_cy<25>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<26> (i_division_64/Maddsub_w0full_cy<26>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<27> (i_division_64/Maddsub_w0full_cy<27>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<28> (i_division_64/Maddsub_w0full_cy<28>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<29> (i_division_64/Maddsub_w0full_cy<29>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<30> (i_division_64/Maddsub_w0full_cy<30>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<31> (i_division_64/Maddsub_w0full_cy<31>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<32> (i_division_64/Maddsub_w0full_cy<32>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<33> (i_division_64/Maddsub_w0full_cy<33>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<34> (i_division_64/Maddsub_w0full_cy<34>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<35> (i_division_64/Maddsub_w0full_cy<35>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<36> (i_division_64/Maddsub_w0full_cy<36>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<37> (i_division_64/Maddsub_w0full_cy<37>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<38> (i_division_64/Maddsub_w0full_cy<38>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<39> (i_division_64/Maddsub_w0full_cy<39>)
+     MUXCY:CI->O           1   0.020   0.000  i_division_64/Maddsub_w0full_cy<40> (i_division_64/Maddsub_w0full_cy<40>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<41> (i_division_64/Maddsub_w0full_cy<41>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<42> (i_division_64/Maddsub_w0full_cy<42>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<43> (i_division_64/Maddsub_w0full_cy<43>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<44> (i_division_64/Maddsub_w0full_cy<44>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<45> (i_division_64/Maddsub_w0full_cy<45>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<46> (i_division_64/Maddsub_w0full_cy<46>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<47> (i_division_64/Maddsub_w0full_cy<47>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<48> (i_division_64/Maddsub_w0full_cy<48>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<49> (i_division_64/Maddsub_w0full_cy<49>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<50> (i_division_64/Maddsub_w0full_cy<50>)
+     MUXCY:CI->O           1   0.019   0.000  i_division_64/Maddsub_w0full_cy<51> (i_division_64/Maddsub_w0full_cy<51>)
+     MUXCY:CI->O           0   0.019   0.000  i_division_64/Maddsub_w0full_cy<52> (i_division_64/Maddsub_w0full_cy<52>)
+     XORCY:CI->O           1   0.239   0.000  i_division_64/Maddsub_w0full_xor<53> (i_division_64/w0full<53>)
+     FD:D                      0.011          i_division_64/w0_d1_54
+    ----------------------------------------
+    Total                      4.012ns (2.114ns logic, 1.899ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'aclk'
+  Total number of paths / destination ports: 3524 / 3071
+-------------------------------------------------------------------------
+Offset:              1.841ns (Levels of Logic = 2)
+  Source:            aresetn (PAD)
+  Destination:       i_datastall/data_out1_63 (FF)
+  Destination Clock: aclk rising
+
+  Data Path: aresetn to i_datastall/data_out1_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            52   0.003   0.935  aresetn_IBUF (aresetn_IBUF)
+     LUT6:I0->O          128   0.068   0.573  i_datastall/_n0146_inv1 (i_datastall/_n0146_inv)
+     FDE:CE                    0.263          i_datastall/data_out1_0
+    ----------------------------------------
+    Total                      1.841ns (0.334ns logic, 1.507ns route)
+                                       (18.1% logic, 81.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'aclk'
+  Total number of paths / destination ports: 72 / 67
+-------------------------------------------------------------------------
+Offset:              1.607ns (Levels of Logic = 2)
+  Source:            i_datastall/stall_data_FSM_FFd2 (FF)
+  Destination:       s_axis_input_tready1 (PAD)
+  Source Clock:      aclk rising
+
+  Data Path: i_datastall/stall_data_FSM_FFd2 to s_axis_input_tready1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            135   0.375   0.756  i_datastall/stall_data_FSM_FFd2 (i_datastall/stall_data_FSM_FFd2)
+     LUT3:I0->O            2   0.068   0.405  i_datastall/stall_data_FSM_FFd3-In11 (s_axis_input_tready1_OBUF)
+     OBUF:I->O                 0.003          s_axis_input_tready1_OBUF (s_axis_input_tready1)
+    ----------------------------------------
+    Total                      1.607ns (0.446ns logic, 1.161ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock aclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+aclk           |    4.012|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 41.00 secs
+Total CPU time to Xst completion: 39.99 secs
+ 
+--> 
+
+
+Total memory usage is 509968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  200 (   0 filtered)
+Number of infos    :   99 (   0 filtered)
+
