@@ -325,7 +325,7 @@
 
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
-\usepackage{url}
+\usepackage[hyphens]{url}
 % url.sty was written by Donald Arseneau. It provides better support for
 % handling and breaking URLs. url.sty is already installed on most LaTeX
 % systems. The latest version can be obtained at:
@@ -444,7 +444,7 @@ Nowadays, IP-core development involves regularly Hardware-In-the-Loop (HIL) simu
 Although interconnecting components may seem a trivial task, there are situations where it can not be done directly. The reasons are two fold: one, at block-level, is related to different number of ports. One IP-core may have more ports than other. Secondly, at port-level, because of word sizes. For example, component ports may have different word sizes such as 8, 32 or 64 bits. Generally speaking, a
 hardware developer requires assembling components under limited input and output ports. A natural solution to this issue is upsizing and/or downsizing data width through converters. However, it turns out that these data width converters are built to solve particular interconnect issues avoiding flexibility and reusability.
 
-Our contribution is to provide an open source hardware cores (converters)\footnote{Source code is freely available on \url{http://ems.eit.uni-kl.de/msdlib}} that perform upsizing and downsizing data width and compliant with AXI4-Stream bus protocol~\cite{AXI4}. Furthermore, the interfaces were developed in VHDL, providing simple, compact and flexible features that can be easily integrated and reused in hardware-in-the-loop simulations.
+Our contribution is to provide an open source hardware cores (converters)\footnote{Source code freely available on \url{https://github.com/tukl-msd/msdlib.vhdl}} that perform upsizing and downsizing data width and compliant with AXI4-Stream bus protocol~\cite{AXI4}. Furthermore, the interfaces were developed in VHDL, providing simple, compact and flexible features that can be easily integrated and reused in hardware-in-the-loop simulations.
 
 The rest of the paper is organized as follows: In Section~\rmnum{2}, a brief background is given. Then, interfaces are described in Section~\rmnum{3}. Next, a typical application, hardware-in-the-loop, is shown in Section~\rmnum{4}. Finally, results and a short conclusion are given in Sections~\rmnum{5} and~\rmnum{6} respectively.
 
